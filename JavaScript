@@ -1,0 +1,43 @@
+// Year in footer
+document.getElementById('year').textContent = new Date().getFullYear();
+
+// Simple product filter
+const filterButtons = document.querySelectorAll('.filter-btn');
+const cards = document.querySelectorAll('.card');
+
+filterButtons.forEach(btn => {
+  btn.addEventListener('click', () => {
+    filterButtons.forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    const category = btn.dataset.filter;
+    cards.forEach(card => {
+      card.style.display = (category === 'all' || card.dataset.category === category) ? '' : 'none';
+    });
+  });
+});
+
+// Basic search by tags and title
+const searchForm = document.getElementById('searchForm');
+const searchInput = document.getElementById('searchInput');
+searchForm.addEventListener('submit', e => {
+  e.preventDefault();
+  const q = searchInput.value.trim().toLowerCase();
+  cards.forEach(card => {
+    const text = `${card.querySelector('h3').textContent} ${card.dataset.tags}`.toLowerCase();
+    card.style.display = text.includes(q) ? '' : 'none';
+  });
+});
+
+// Contact form (demo only)
+const contactForm = document.getElementById('contactForm');
+contactForm.addEventListener('submit', e => {
+  e.preventDefault();
+  const name = document.getElementById('name').value.trim();
+  const email = document.getElementById('email').value.trim();
+  const message = document.getElementById('message').value.trim();
+
+  // Send via mailto as a simple no-backend option
+  const subject = encodeURIComponent(`KPARTS website enquiry from ${name}`);
+  const body = encodeURIComponent(`Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`);
+  window.location.href = `mailto:sales@kparts.co.za?subject=${subject}&body=${body}`;
+});
