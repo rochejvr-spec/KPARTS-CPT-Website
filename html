@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>KPARTS — Hyundai & KIA Auto Parts in Cape Town</title>
+  <meta name="description" content="Genuine & high-quality Hyundai and KIA parts in Cape Town. Fast service, local expertise, and WhatsApp support." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="favicon.ico" />
+  <!-- Basic Open Graph -->
+  <meta property="og:title" content="KPARTS — Hyundai & KIA Auto Parts in Cape Town" />
+  <meta property="og:description" content="Trusted local supplier for Hyundai & KIA parts. Quick quotes via WhatsApp." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://kparts.example" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="#">KPARTS</a>
+      <nav class="nav">
+        <a href="#products">Products</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+        <a class="btn btn-whatsapp" href="https://wa.me/27XXXXXXXXX?text=Hi%20KPARTS,%20I%20need%20parts%20for..." target="_blank" rel="noopener">WhatsApp</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container hero-inner">
+      <h1>Hyundai & KIA parts. Local. Reliable. Fast.</h1>
+      <p>Based in Cape Town. Get the right part first time — by VIN or reg. Trusted by workshops and everyday drivers.</p>
+      <form class="search" id="searchForm">
+        <input type="text" id="searchInput" placeholder="Search by part name, model, or code…" aria-label="Search parts" />
+        <button class="btn" type="submit">Search</button>
+      </form>
+      <div class="hero-ctas">
+        <a class="btn btn-primary" href="#products">Browse products</a>
+        <a class="btn btn-outline" href="https://wa.me/27XXXXXXXXX?text=Hi%20KPARTS%20—%20Please%20quote%20for%20VIN:%20" target="_blank" rel="noopener">Quick quote on WhatsApp</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="usp">
+    <div class="container usp-grid">
+      <div class="usp-item">
+        <h3>Right part by VIN</h3>
+        <p>Share your VIN or registration for accurate fitment — no guesswork.</p>
+      </div>
+      <div class="usp-item">
+        <h3>Local stock</h3>
+        <p>Cape Town-based supply with fast turnaround and honest lead times.</p>
+      </div>
+      <div class="usp-item">
+        <h3>Hyundai & KIA specialists</h3>
+        <p>Focused inventory, better pricing, and reliable brand knowledge.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="products" class="products">
+    <div class="container">
+      <div class="section-head">
+        <h2>Popular categories</h2>
+        <p>Core essentials for service, safety, and longevity — tailored for local roads and weather.</p>
+      </div>
+
+      <div class="filters">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="service">Service</button>
+        <button class="filter-btn" data-filter="cooling">Cooling</button>
+        <button class="filter-btn" data-filter="suspension">Suspension</button>
+        <button class="filter-btn" data-filter="electrical">Electrical</button>
+      </div>
+
+      <div class="grid" id="productGrid">
+        <!-- Sample cards (replace with real data) -->
+        <article class="card" data-category="service" data-tags="oil filter hyundai kia">
+          <img src="images/oil-filter.jpg" alt="Oil filter" />
+          <div class="card-body">
+            <h3>Oil Filter</h3>
+            <p>Genuine-spec filtration for Hyundai/KIA. Protects engine life.</p>
+            <div class="meta">
+              <span>Part code: OF-123</span>
+              <span>Fitment: By VIN</span>
+            </div>
+            <div class="card-actions">
+              <a class="btn btn-small" href="https://wa.me/27XXXXXXXXX?text=Quote%20Oil%20Filter%20OF-123%20for%20VIN:" target="_blank" rel="noopener">Quote on WhatsApp</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="card" data-category="cooling" data-tags="radiator coolant hyundai">
+          <img src="images/radiator.jpg" alt="Radiator" />
+          <div class="card-body">
+            <h3>Radiator</h3>
+            <p>OEM-grade cooling for South African summer heat and traffic.</p>
+            <div class="meta">
+              <span>Part code: RAD-455</span>
+              <span>Fitment: By VIN</span>
+            </div>
+            <div class="card-actions">
+              <a class="btn btn-small" href="https://wa.me/27XXXXXXXXX?text=Quote%20Radiator%20RAD-455%20for%20VIN:" target="_blank" rel="noopener">Quote on WhatsApp</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="card" data-category="suspension" data-tags="control arm kia">
+          <img src="images/control-arm.jpg" alt="Control arm" />
+          <div class="card-body">
+            <h3>Control Arm</h3>
+            <p>Durable suspension components for uneven urban roads.</p>
+            <div class="meta">
+              <span>Part code: CA-802</span>
+              <span>Fitment: By VIN</span>
+            </div>
+            <div class="card-actions">
+              <a class="btn btn-small" href="https://wa.me/27XXXXXXXXX?text=Quote%20Control%20Arm%20CA-802%20for%20VIN:" target="_blank" rel="noopener">Quote on WhatsApp</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="card" data-category="electrical" data-tags="alternator hyundai kia">
+          <img src="images/alternator.jpg" alt="Alternator" />
+          <div class="card-body">
+            <h3>Alternator</h3>
+            <p>Reliable charging systems for cold starts and daily commutes.</p>
+            <div class="meta">
+              <span>Part code: ALT-670</span>
+              <span>Fitment: By VIN</span>
+            </div>
+            <div class="card-actions">
+              <a class="btn btn-small" href="https://wa.me/27XXXXXXXXX?text=Quote%20Alternator%20ALT-670%20for%20VIN:" target="_blank" rel="noopener">Quote on WhatsApp</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="about">
+    <div class="container">
+      <div class="section-head">
+        <h2>About KPARTS</h2>
+        <p>We’re a Cape Town team focused on Hyundai & KIA — fast quoting, honest advice, and the right fitment.</p>
+      </div>
+      <div class="about-grid">
+        <div>
+          <h3>Why choose us</h3>
+          <ul class="list">
+            <li>VIN-first fitment to avoid returns</li>
+            <li>Local stock and reliable lead times</li>
+            <li>Friendly WhatsApp support and quick invoicing</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Serving the Cape</h3>
+          <p>From CBD to the Northern and Southern Suburbs, we support workshops and drivers with dependable parts and fair pricing.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <div class="container">
+      <div class="section-head">
+        <h2>Contact us</h2>
+        <p>Share your VIN or registration for faster, accurate quotes.</p>
+      </div>
+      <div class="contact-grid">
+        <form class="contact-form" id="contactForm">
+          <label for="name">Name</label>
+          <input id="name" name="name" type="text" placeholder="Your name" required />
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" placeholder="you@example.com" required />
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" placeholder="Vehicle model, VIN or reg, parts needed…" required></textarea>
+          <button class="btn btn-primary" type="submit">Send</button>
+          <p class="form-note">We’ll reply within business hours. For urgent quotes, use WhatsApp.</p>
+        </form>
+
+        <div class="contact-info">
+          <div class="contact-card">
+            <h3>Reach us</h3>
+            <p><strong>WhatsApp:</strong> +27 XX XXX XXXX</p>
+            <p><strong>Email:</strong> sales@kparts.co.za</p>
+            <p><strong>Hours:</strong> Mon–Fri, 8:30–17:00</p>
+            <p><strong>Address:</strong> Cape Town, Western Cape</p>
+          </div>
+          <div class="map-embed">
+            <!-- Replace with your actual map embed -->
+            <iframe title="KPARTS location" src="https://maps.google.com/maps?q=Cape%20Town%20South%20Africa&t=&z=13&ie=UTF8&iwloc=&output=embed"></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> KPARTS. Hyundai & KIA parts — Cape Town.</p>
+      <div class="footer-links">
+        <a href="#">Privacy</a>
+        <a href="#">Terms</a>
+      </div>
+    </div>
+  </footer>
+
+  <div class="whatsapp-fab">
+    <a aria-label="WhatsApp chat" href="https://wa.me/27XXXXXXXXX?text=Hi%20KPARTS,%20I%20need%20parts%20for..." target="_blank" rel="noopener">💬</a>
+  </div>
+
+  <!-- Basic Schema for Local Business -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "AutoPartsStore",
+    "name": "KPARTS",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Cape Town",
+      "addressRegion": "Western Cape",
+      "addressCountry": "ZA"
+    },
+    "telephone": "+27XXXXXXXXX",
+    "openingHours": "Mo-Fr 08:30-17:00",
+    "areaServed": "Cape Town"
+  }
+  </script>
+
+  <script src="script.js"></script>
+</body>
+</html>
